@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import { languageContext } from "../App"
+import { LanguageContext } from "../App"
 
 export default function Details() {
-    const { lang } = useContext(languageContext)
+    const { lang } = useContext(LanguageContext)
     return (
         <section>
             <h3>{lang["details.header"]}</h3>
