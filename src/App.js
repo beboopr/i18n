@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, createContext } from 'react';
+import Details from './component/Details';
 import English from './lang/en.json'
 import Spanish from './lang/es.json'
 import './App.css';
@@ -6,10 +7,13 @@ import './App.css';
 const locale = navigator.language || 'en';
 const _lang = (locale==='es') ? Spanish : English;
 
+
+export const languageContext = createContext()
+
 function App() {
   const [lang, setLang] = useState(_lang)
-  console.log(lang)
   return (
+    <languageContext.Provider value={{ lang }}>
     <div className="App">
       <header className="App-header">
        <div>
@@ -26,8 +30,10 @@ function App() {
         >
           Learn React
         </a>
+        <Details/>
       </header>
     </div>
+        </languageContext.Provider>
   );
 }
 

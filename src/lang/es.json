@@ -1,6 +1,7 @@
 {
-    "app.header": "Bienvenidos to Boca Code",
-    "app.subhead": "Conviertete en un ingeniero en Software en 10 semanas",
-    "app.cta": "Aplica ahora"
-
+    "app.header": "Bienvenidos a Boca Code",
+    "app.subhead": "Conviertese en un ingeniero en Software en 10 semanas",
+    "app.cta": "Aplica ahora",
+    "details.header": "Esquema del programa",
+    "details.text": "Este curso le enseñará todas las habilidades duras y blandas para tener una carrera exitosa en tecnología."
 }
